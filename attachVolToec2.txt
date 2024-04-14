@@ -1,5 +1,3 @@
-
-
 list block command
 - lsblk
 
@@ -21,3 +19,7 @@ check if volume is mounted or not.
 
 unmount volume from test directory.
 - umount /test
+
+
+chekc if attached has data or not?
+- file -s /dev/xvdf
