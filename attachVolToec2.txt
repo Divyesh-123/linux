@@ -1,0 +1,23 @@
+
+
+list block command
+- lsblk
+
+
+format volume
+- mkfs.ext4 /dev/xvdf
+
+
+create empty dir for mounting the volume to that dir.
+- mkdir test
+
+mouth volume to the test directory.
+- mount /dev/xvdf /test/
+
+
+check if volume is mounted or not.
+- mountpoint /test
+
+
+unmount volume from test directory.
+- umount /test
