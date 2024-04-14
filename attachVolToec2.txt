@@ -23,3 +23,19 @@ unmount volume from test directory.
 
 chekc if attached has data or not?
 - file -s /dev/xvdf
+
+
+--------------------------------
+
+resize volume for ext4 filesystem
+- resize2fs /dev/xvdf
+
+if we want to resize /root/ volume
+- modify the volume block in console.
+- then we need to resize the partion first in this case.
+growpart /dev/xvda 1  #extexnd partition one 
+
+- then resize the volume
+resize2fs /dev/xvda1
+
+
